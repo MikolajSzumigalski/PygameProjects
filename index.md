@@ -1,4 +1,6 @@
 # Kurs Pygame
+Materiały pochodzą z serii fimów [LINK](https://www.youtube.com/watch?v=nGufy7weyGY&list=PLsk-HSGFjnaH5yghzu7PcOzm9NhsW0Urw&index=4), którą serdecznie polecam. Ta strona jest dla mnie poligonem doświadczalnym do nauki dla siebie. Jeśli przy okazji ktoś inny z tego skorzysta to bardzo się cieszę.
+
 ## Szablon gry
 
 Spróbujmy przeanalizować plik znajdujący się poniżej. Importujemy bibliotekę **pygame**. Następnie ustalamy szerokość, wysokość i ilość klatek na sekundę. Wygodnie jest przechowywać w zmiennych globalnych. Wygodną praktyką jest też przechowywanie podtawowych kolorów w postaci zmiennych, ponieważ mogą nam się przydać do kolorowania obiektów.
@@ -55,4 +57,6 @@ while running:
 
 pygame.quit()
 ```
+# PIERWSZA GRA
+## Tworzenie postaci
 

@@ -3,7 +3,12 @@
 
 Spróbujmy przeanalizować plik znajdujący się poniżej. Importujemy bibliotekę **pygame**. Następnie ustalamy szerokość, wysokość i ilość klatek na sekundę. Wygodnie jest przechowywać w zmiennych globalnych. Wygodną praktyką jest też przechowywanie podtawowych kolorów w postaci zmiennych, ponieważ mogą nam się przydać do kolorowania obiektów.
 
-Pygame.init i pygame.mixer.init służą nam do inicjowania samego pygame'a oraz muzyki. Następnie do zmiennej screen wrzucamy inicjalizację ekranu w której podajemy ustalone wcześniej wymiary okna. Później możemy wybrać sobie tytuł naszej gry. Inicjalizacja zegara będzie nam potrzebna podczas liczenia klatek na <b>sekundę</b>
+Pygame.init i pygame.mixer.init służą nam do inicjowania samego pygame'a oraz muzyki. Następnie do zmiennej screen wrzucamy inicjalizację ekranu w której podajemy ustalone wcześniej wymiary okna. Później możemy wybrać sobie tytuł naszej gry. Inicjalizacja zegara będzie nam potrzebna podczas liczenia klatek na sekundę.
+
+**All_sprites** przechowuje dane na temat wyświetlanych obiektów. astępnie potrzebujemy pętli która będzie na wyświetlać i rysować nasze obiekty. Zmienna **running** służy do kończenia pętli w momencie gdy użytkownik np. będzie chciał wyłączyć grę (funkcja wyłączająca program jest przy pierwszym if'ie). Należy pamiętać o tym, żeby obiekty były odświerzane, więc potrzebujemy  
+**all_sprites.update()**
+Na końcu wypełniamy ekran czarnym kolorem i wyświelamy go.
+
 ```python
 #Pygame template - skeleton for a new pygame project
 import pygame
@@ -50,4 +55,4 @@ while running:
 
 pygame.quit()
 ```
-Jak 
+
